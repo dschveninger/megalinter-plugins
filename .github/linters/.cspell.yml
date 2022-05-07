@@ -1,0 +1,37 @@
+---
+$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json
+allowCompoundWords: true
+features:
+  weighted-suggestions: true
+language: en
+languageSettings:
+  - dictionaries:
+      - bash
+    languageId": shellscript
+    locale: "*"
+    includeRegExpList:
+      - "/#.*/"
+      - "/('''|\"\"\")[^\\1]+?\\1/g"
+  - dictionaries:
+      - bash
+    languageId": shellscript
+    locale: "*"
+    includeRegExpList:
+      - "/#.*/"
+      - "/('''|\"\"\")[^\\1]+?\\1/g"
+ignorePaths:
+  - "**/.vscode/**"
+imports:
+  - "@cspell/dict-bash/cspell-ext.json"
+  - "@cspell/dict-golang/cspell-ext.json"
+version: "0.2"
+useGitignore: true
+words:
+  - Codacy
+  - SARIF
+  - codeql
+  - sarif
+  - Schveninger
+
+flagWords:
+  - hte
